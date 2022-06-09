@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-404-js",
+    "path": "/404.html",
+    "result": {"data":{"allContentfulPost":{"nodes":[{"title":"Como crear mi primera función Lambda","url":"como-crear-mi-primera-funcion-lambda","heroImage":{"url":"https://images.ctfassets.net/vjxxd9nef7ah/y8PKvO4al3w9GSsZV72di/2ad753730eb6b9690ceb180a1fb29ad2/lambda-logo.png","title":"AWS Lambda"},"description":{"description":"Guia para iniciar con el desarrollo en tecnologías Serverless utilizando la nube de AWS."}}],"pageInfo":{"currentPage":1,"hasNextPage":false,"hasPreviousPage":false,"totalCount":1}}},"pageContext":{}},
+    "staticQueryHashes": []}

@@ -1,0 +1,56 @@
+{
+    "name": "axel-rodriguez",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Axel Rodriguez",
+    "author": "Axel Rodriguez",
+    "keywords": [
+        "gatsby"
+    ],
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean"
+    },
+    "dependencies": {
+        "@mapbox/rehype-highlight-code-block": "^1.0.0",
+        "@mapbox/rehype-prism": "^0.8.0",
+        "bootstrap": "^4.6.0",
+        "gatsby": "^4.7.1",
+        "gatsby-plugin-algolia": "^0.26.0",
+        "gatsby-plugin-image": "^2.10.0",
+        "gatsby-plugin-sharp": "^4.10.1",
+        "gatsby-source-contentful": "^7.8.1",
+        "highlight.js": "^11.5.0",
+        "prettier": "^2.6.0",
+        "prism-react-renderer": "^1.3.1",
+        "react": "^17.0.1",
+        "react-clipboard-button": "^0.0.7",
+        "react-dom": "^17.0.1",
+        "react-helmet": "^6.1.0",
+        "react-markdown": "^8.0.1",
+        "react-syntax-highlighter": "^15.5.0",
+        "react-toast": "^1.0.3",
+        "rehype": "^12.0.1",
+        "rehype-document": "^6.0.1",
+        "rehype-format": "^4.0.1",
+        "rehype-highlight": "^5.0.2",
+        "rehype-parse": "^8.0.4",
+        "rehype-prism-plus": "^1.3.2",
+        "rehype-stringify": "^9.0.3",
+        "remark-code-frontmatter": "^1.0.0",
+        "remark-code-screenshot": "^1.0.0",
+        "remark-gfm": "^3.0.1",
+        "remark-parse": "^10.0.1",
+        "remark-prettier": "^1.3.0",
+        "remark-rehype": "^10.1.0",
+        "remark-unwrap-images": "^3.0.1",
+        "three": "^0.139.0",
+        "vanta": "^0.5.21"
+    },
+    "devDependencies": {
+        "@andrew-codes/gatsby-plugin-elasticlunr-search": "^1.0.4"
+    }
+}
