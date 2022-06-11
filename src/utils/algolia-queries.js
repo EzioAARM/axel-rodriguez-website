@@ -4,31 +4,35 @@ const pagePath = `content`;
 const indexName = `Pages`;
 
 const pageQuery = `{
-  pages: allMarkdownRemark(
-    filter: {
-      fileAbsolutePath: { regex: "/${escapeStringRegexp(pagePath)}/" },
-    }
-  ) {
+  pages: allContentfulPost(filter: {keywords: {regex: "//"}}) {
     edges {
       node {
         id
-        frontmatter {
-          title
+        title
+        url
+        heroImage {
+            imageUrl: url
+            imageTitle: title
         }
-        fields {
-          slug
+        description {
+            description
         }
-        excerpt(pruneLength: 5000)
+        keywords
       }
     }
   }
 }`;
 
-function pageToAlgoliaRecord({ node: { id, frontmatter, fields, ...rest } }) {
+function pageToAlgoliaRecord({
+    node: { id, keywords, url, heroImage, description, title, ...rest },
+}) {
     return {
         objectID: id,
-        ...frontmatter,
-        ...fields,
+        keywords,
+        title,
+        url,
+        ...heroImage,
+        ...description,
         ...rest,
     };
 }

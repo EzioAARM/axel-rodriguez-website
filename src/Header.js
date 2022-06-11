@@ -67,6 +67,7 @@ class Header extends Component {
                                         className="nav-link nav-link-icon"
                                         href="https://github.com/EzioAARM"
                                         target="_blank"
+                                        rel="noreferrer"
                                         data-toggle="tooltip"
                                         title="Sígueme en github"
                                     >
@@ -81,6 +82,7 @@ class Header extends Component {
                                         className="nav-link nav-link-icon"
                                         href="https://www.linkedin.com/in/axelrm/"
                                         target="_blank"
+                                        rel="noreferrer"
                                         data-toggle="tooltip"
                                         title="Sígueme en LinkedIn"
                                     >

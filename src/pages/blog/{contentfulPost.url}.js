@@ -8,7 +8,7 @@ import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Helmet } from "react-helmet";
 
-export default (props) => {
+const PostPage = (props) => {
     return (
         <>
             <Helmet>
@@ -260,3 +260,5 @@ export const data = graphql`
         }
     }
 `;
+
+export default PostPage;
