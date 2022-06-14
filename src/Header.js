@@ -6,30 +6,12 @@ import "./assets/css/nucleo-svg.css";
 import "./assets/css/font-awesome.css";
 import "./assets/css/argon-design-system.css?v=1.2.2";
 import { Helmet } from "react-helmet";
-import profile_picture from "./assets/img/profile.png";
 
 class Header extends Component {
     render() {
         return (
             <>
                 <Helmet>
-                    {!this.props.isPost ? (
-                        <>
-                            <meta
-                                name="title"
-                                content="Axel Rodriguez - Desarrollador web"
-                            />
-                            <meta
-                                name="description"
-                                content="Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing."
-                            />
-                            <meta
-                                name="keywords"
-                                content="AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB"
-                            />
-                            <meta itemProp="image" content={profile_picture} />
-                        </>
-                    ) : null}
                     <meta
                         http-equiv="Content-Type"
                         content="text/html; charset=utf-8"

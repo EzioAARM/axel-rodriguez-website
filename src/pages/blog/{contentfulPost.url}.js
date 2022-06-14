@@ -28,7 +28,7 @@ const PostPage = (props) => {
                     content={props.data.contentfulPost.keywords}
                 />
             </Helmet>
-            <Header page="home" isPost={true}></Header>
+            <Header page="home"></Header>
             <div className="wrapper">
                 <div className="section section-hero section-shaped">
                     <div className="shape">

@@ -31,5 +31,11 @@ module.exports = {
         },
         `gatsby-plugin-styled-components`,
         "gatsby-plugin-robots-txt",
+        {
+            resolve: "gatsby-plugin-html-attributes",
+            options: {
+                lang: "es",
+            },
+        },
     ],
 };

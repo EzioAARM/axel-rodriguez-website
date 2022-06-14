@@ -42,6 +42,19 @@ const Index = ({ data }) => {
             <Helmet>
                 <body className="profile-page" />
                 <title>Axel Rodriguez - Desarrollador web</title>
+                <meta
+                    name="title"
+                    content="Axel Rodriguez - Desarrollador web"
+                />
+                <meta
+                    name="description"
+                    content="Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing."
+                />
+                <meta
+                    name="keywords"
+                    content="AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB"
+                />
+                <meta itemProp="image" content={profile_picture} />
             </Helmet>
             <Header page="home"></Header>
             <div className="wrapper">

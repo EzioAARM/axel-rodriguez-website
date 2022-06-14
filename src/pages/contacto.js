@@ -1,12 +1,26 @@
 import React from "react";
 import Header from "../Header";
 import Helmet from "react-helmet";
+import profile_picture from "./../assets/img/profile.png";
 
 const Contacto = () => {
     return (
         <>
             <Helmet>
                 <body className="profile-page" />
+                <meta
+                    name="title"
+                    content="Axel Rodriguez - Desarrollador web"
+                />
+                <meta
+                    name="description"
+                    content="Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing."
+                />
+                <meta
+                    name="keywords"
+                    content="AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB"
+                />
+                <meta itemProp="image" content={profile_picture} />
             </Helmet>
             <Header page="home"></Header>
             <div className="wrapper">
