@@ -62,7 +62,7 @@ const Index = ({ data }) => {
             <div className="wrapper">
                 <div className="section-profile-cover section-shaped my-0 index-background">
                     <div ref={myRef}></div>
-                    <div class="separator separator-bottom separator-skew">
+                    <div className="separator separator-bottom separator-skew">
                         <svg
                             x="0"
                             y="0"
@@ -72,7 +72,7 @@ const Index = ({ data }) => {
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <polygon
-                                class="fill-secondary"
+                                className="fill-secondary"
                                 points="2560 0 2560 100 0 100"
                             ></polygon>
                         </svg>
@@ -85,7 +85,7 @@ const Index = ({ data }) => {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-3 order-lg-2">
                                         <div className="card-profile-image">
-                                            <a href="#">
+                                            <a>
                                                 <img
                                                     src={profile_picture}
                                                     className="rounded-circle"
@@ -93,8 +93,8 @@ const Index = ({ data }) => {
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 order-lg-3 text-lg-center align-self-lg-center">
-                                        <div class="card-profile-actions py-4 mt-lg-0">
+                                    <div className="col-lg-4 order-lg-3 text-lg-center align-self-lg-center">
+                                        <div className="card-profile-actions py-4 mt-lg-0">
                                             <img
                                                 alt="AWS Logo"
                                                 src={aws_logo}
@@ -111,10 +111,10 @@ const Index = ({ data }) => {
                                             />
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 order-lg-1">
-                                        <div class="card-profile-stats d-flex justify-content-center">
+                                    <div className="col-lg-4 order-lg-1">
+                                        <div className="card-profile-stats d-flex justify-content-center">
                                             <div>
-                                                <span class="heading">
+                                                <span className="heading">
                                                     <img
                                                         alt="SQL Server Logo"
                                                         src={sql_server_logo}
@@ -124,7 +124,7 @@ const Index = ({ data }) => {
                                                 </span>
                                             </div>
                                             <div>
-                                                <span class="heading">
+                                                <span className="heading">
                                                     <img
                                                         alt="Javascript Logo"
                                                         src={js_logo}
@@ -134,7 +134,7 @@ const Index = ({ data }) => {
                                                 </span>
                                             </div>
                                             <div>
-                                                <span class="heading">
+                                                <span className="heading">
                                                     <img
                                                         alt="CSharp Logo"
                                                         src={csharp_logo}

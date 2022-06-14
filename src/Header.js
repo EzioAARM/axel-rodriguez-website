@@ -5,6 +5,9 @@ import "./assets/css/nucleo-icons.css";
 import "./assets/css/nucleo-svg.css";
 import "./assets/css/font-awesome.css";
 import "./assets/css/argon-design-system.css?v=1.2.2";
+import "jquery/dist/jquery.min.js";
+import "popper.js/dist/popper";
+import "bootstrap/dist/js/bootstrap.min";
 
 class Header extends Component {
     render() {
@@ -88,7 +91,7 @@ class Header extends Component {
                                     >
                                         <i className="fa fa-linkedin"></i>
                                         <span className="nav-link-inner--text d-lg-none">
-                                            Github
+                                            LinkedIn
                                         </span>
                                     </a>
                                 </li>

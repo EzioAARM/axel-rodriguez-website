@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header";
-import { graphql, Link } from "gatsby";
+import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import profile_picture from "./../assets/img/profile.png";
 import algoliasearch from "algoliasearch/lite";
@@ -85,7 +85,10 @@ const Pagination = ({ currentRefinement, nbPages, refine }) => {
 const Hits = ({ hits }) => {
     if (hits.length > 0)
         return hits.map((hit) => (
-            <div className="col-md-4 blog-item" key={hit.objectID}>
+            <div
+                className="col-6 col-sm-4 col-md-3 blog-item"
+                key={hit.objectID}
+            >
                 <Link to={`/blog/${hit.url}`}>
                     <div className="card hoverable-card shadow">
                         <img
