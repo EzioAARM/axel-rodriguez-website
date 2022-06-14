@@ -3,7 +3,7 @@ require("dotenv").config({
 });
 module.exports = {
     siteMetadata: {
-        title: `Axel Rodriguez`,
+        title: `Axel Rodriguez - Desarrollador web`,
         siteUrl: `https://axel-rodriguez.com`,
         description: `Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing.`,
         keywords: `AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB`,
