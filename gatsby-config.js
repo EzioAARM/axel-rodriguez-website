@@ -5,6 +5,12 @@ module.exports = {
     siteMetadata: {
         title: `Axel Rodriguez`,
         siteUrl: `https://axel-rodriguez.com`,
+        description: `Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing.`,
+        keywords: `AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB`,
+        language: `Spanish`,
+        robots: `index, follow`,
+        author: `Axel Rodriguez`,
+        viewport: `width=device-width, initial-scale=1.0`,
     },
     plugins: [
         {
@@ -24,5 +30,6 @@ module.exports = {
             },
         },
         `gatsby-plugin-styled-components`,
+        "gatsby-plugin-robots-txt",
     ],
 };
