@@ -5,9 +5,6 @@ import "./assets/css/nucleo-icons.css";
 import "./assets/css/nucleo-svg.css";
 import "./assets/css/font-awesome.css";
 import "./assets/css/argon-design-system.css?v=1.2.2";
-import "jquery/dist/jquery.min.js";
-import "popper.js/dist/popper";
-import "bootstrap/dist/js/bootstrap.min";
 import { Helmet } from "react-helmet";
 import profile_picture from "./assets/img/profile.png";
 
