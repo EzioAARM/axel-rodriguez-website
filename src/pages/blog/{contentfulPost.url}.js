@@ -13,11 +13,12 @@ const PostPage = (props) => {
         <>
             <Helmet>
                 <title>{props.data.contentfulPost.title}</title>
-                <meta charset="UTF-8" />
+
                 <meta
                     itemProp="image"
                     content={props.data.contentfulPost.heroImage.url}
                 />
+                <meta name="title" content={props.data.contentfulPost.title} />
                 <meta
                     name="description"
                     content={props.data.contentfulPost.description.description}
@@ -26,13 +27,8 @@ const PostPage = (props) => {
                     name="keywords"
                     content={props.data.contentfulPost.keywords}
                 />
-                <meta name="author" content="Axel Rodriguez" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
             </Helmet>
-            <Header page="home"></Header>
+            <Header page="home" isPost={true}></Header>
             <div className="wrapper">
                 <div className="section section-hero section-shaped">
                     <div className="shape">

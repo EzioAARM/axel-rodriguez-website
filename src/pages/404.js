@@ -151,7 +151,7 @@ const NotFoundPage = ({ data }) => {
 };
 
 export const query = graphql`
-    query RecentPosts404 {
+    query NotFoundPosts {
         allContentfulPost(limit: 3, sort: { fields: createdAt }) {
             nodes {
                 title

@@ -8,11 +8,47 @@ import "./assets/css/argon-design-system.css?v=1.2.2";
 import "jquery/dist/jquery.min.js";
 import "popper.js/dist/popper";
 import "bootstrap/dist/js/bootstrap.min";
+import { Helmet } from "react-helmet";
+import profile_picture from "./assets/img/profile.png";
 
 class Header extends Component {
     render() {
         return (
             <>
+                <Helmet>
+                    {!this.props.isPost ? (
+                        <>
+                            <meta
+                                name="title"
+                                content="Axel Rodriguez - Desarrollador web"
+                            />
+                            <meta
+                                name="description"
+                                content="Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing."
+                            />
+                            <meta
+                                name="keywords"
+                                content="AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB"
+                            />
+                            <meta itemProp="image" content={profile_picture} />
+                        </>
+                    ) : null}
+                    <meta
+                        http-equiv="Content-Type"
+                        content="text/html; charset=utf-8"
+                    />
+                    <meta name="language" content="Spanish" />
+                    <meta name="robots" content="index, follow" />
+                    <meta
+                        http-equiv="Content-Type"
+                        content="text/html; charset=utf-8"
+                    />
+                    <meta name="author" content="Axel Rodriguez" />
+                    <meta
+                        name="viewport"
+                        content="width=device-width, initial-scale=1.0"
+                    />
+                </Helmet>
                 <nav
                     className={
                         "navbar navbar-main navbar-expand-lg navbar-transparent navbar-light py-2"
