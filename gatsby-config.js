@@ -9,6 +9,7 @@ module.exports = {
         robots: `index, follow`,
         viewport: `width=device-width, initial-scale=1.0`,
         url: "https://axel-rodriguez.com",
+        image: "src/assets/img/profile.png",
     },
     plugins: [
         {
@@ -34,6 +35,12 @@ module.exports = {
             resolve: "gatsby-plugin-html-attributes",
             options: {
                 lang: "es",
+            },
+        },
+        {
+            resolve: "gatsby-plugin-manifest",
+            options: {
+                icon: "src/assets/img/favicon.png",
             },
         },
     ],

@@ -11,7 +11,7 @@ const Contacto = () => {
                 title="Axel Rodriguez - Desarrollador web"
                 description="Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing."
                 keywords="AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB"
-                image={profile_picture}
+                images={[{ url: profile_picture }]}
             />
             <Helmet>
                 <body className="profile-page" />

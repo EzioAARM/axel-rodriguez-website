@@ -16,7 +16,7 @@ const PostPage = (props) => {
                 title={props.data.contentfulPost.title}
                 description={props.data.contentfulPost.description.description}
                 keywords={props.data.contentfulPost.keywords}
-                image={props.data.contentfulPost.heroImage.url}
+                images={[{ url: props.data.contentfulPost.heroImage.url }]}
             />
             <Helmet>
                 <title>{props.data.contentfulPost.title}</title>
