@@ -11,6 +11,7 @@ import {
     connectPagination,
 } from "react-instantsearch-dom";
 import "../assets/css/algolia-search.css";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 
 const searchClient = algoliasearch(
     process.env.GATSBY_ALGOLIA_APP_ID,
@@ -42,6 +43,7 @@ const Pagination = ({ currentRefinement, nbPages, refine }) => {
                 </li>
                 {pagesArray.map((_, index) => (
                     <li
+                        key={index}
                         className={
                             "page-item" +
                             (currentRefinement === index + 1 ? " active" : "")
@@ -59,7 +61,7 @@ const Pagination = ({ currentRefinement, nbPages, refine }) => {
                     </li>
                 ))}
                 <li
-                    class={
+                    className={
                         "page-item" +
                         (currentRefinement === pagesArray.length
                             ? " disabled"
@@ -67,14 +69,14 @@ const Pagination = ({ currentRefinement, nbPages, refine }) => {
                     }
                 >
                     <button
-                        class="page-link"
+                        className="page-link"
                         onClick={(e) => {
                             e.preventDefault();
                             refine(currentRefinement - 1);
                         }}
                     >
-                        <i class="fa fa-angle-right"></i>
-                        <span class="sr-only">Next</span>
+                        <i className="fa fa-angle-right"></i>
+                        <span className="sr-only">Next</span>
                     </button>
                 </li>
             </ul>
@@ -126,22 +128,15 @@ const Blog = () => {
     const CustomPagination = connectPagination(Pagination);
     return (
         <>
+            <GatsbySeo
+                title="Axel Rodriguez - Desarrollador web"
+                description="Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing."
+                keywords="AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB"
+                image={profile_picture}
+            />
             <Helmet>
                 <body className="profile-page" />
                 <title>Blog de Axel</title>
-                <meta
-                    name="title"
-                    content="Axel Rodriguez - Desarrollador web"
-                />
-                <meta
-                    name="description"
-                    content="Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing."
-                />
-                <meta
-                    name="keywords"
-                    content="AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB"
-                />
-                <meta itemProp="image" content={profile_picture} />
             </Helmet>
             <Header page="home"></Header>
             <div className="wrapper">

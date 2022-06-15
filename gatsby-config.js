@@ -1,16 +1,14 @@
 require("dotenv").config({
     path: `.env.${process.env.NODE_ENV}`,
 });
+
 module.exports = {
     siteMetadata: {
-        title: `Axel Rodriguez - Desarrollador web`,
         siteUrl: `https://axel-rodriguez.com`,
-        description: `Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing.`,
-        keywords: `AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB`,
         language: `Spanish`,
         robots: `index, follow`,
-        author: `Axel Rodriguez`,
         viewport: `width=device-width, initial-scale=1.0`,
+        url: "https://axel-rodriguez.com",
     },
     plugins: [
         {
@@ -30,6 +28,7 @@ module.exports = {
             },
         },
         `gatsby-plugin-styled-components`,
+        "gatsby-plugin-next-seo",
         "gatsby-plugin-robots-txt",
         {
             resolve: "gatsby-plugin-html-attributes",

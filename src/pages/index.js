@@ -10,6 +10,7 @@ import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import * as THREE from "three";
 import NET from "vanta/dist/vanta.net.min";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 
 const Index = ({ data }) => {
     const [vantaEffect, setVantaEffect] = useState(0);
@@ -39,22 +40,15 @@ const Index = ({ data }) => {
     let posts = data.allContentfulPost.nodes;
     return (
         <>
+            <GatsbySeo
+                title="Axel Rodriguez - Desarrollador web"
+                description="Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing."
+                keywords="AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB"
+                image={profile_picture}
+            />
             <Helmet>
                 <body className="profile-page" />
                 <title>Axel Rodriguez - Desarrollador web</title>
-                <meta
-                    name="title"
-                    content="Axel Rodriguez - Desarrollador web"
-                />
-                <meta
-                    name="description"
-                    content="Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing."
-                />
-                <meta
-                    name="keywords"
-                    content="AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB"
-                />
-                <meta itemProp="image" content={profile_picture} />
             </Helmet>
             <Header page="home"></Header>
             <div className="wrapper">

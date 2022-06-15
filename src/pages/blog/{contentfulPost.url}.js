@@ -7,26 +7,19 @@ import remarkGfm from "remark-gfm";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Helmet } from "react-helmet";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 
 const PostPage = (props) => {
     return (
         <>
+            <GatsbySeo
+                title={props.data.contentfulPost.title}
+                description={props.data.contentfulPost.description.description}
+                keywords={props.data.contentfulPost.keywords}
+                image={props.data.contentfulPost.heroImage.url}
+            />
             <Helmet>
                 <title>{props.data.contentfulPost.title}</title>
-
-                <meta
-                    itemProp="image"
-                    content={props.data.contentfulPost.heroImage.url}
-                />
-                <meta name="title" content={props.data.contentfulPost.title} />
-                <meta
-                    name="description"
-                    content={props.data.contentfulPost.description.description}
-                />
-                <meta
-                    name="keywords"
-                    content={props.data.contentfulPost.keywords}
-                />
             </Helmet>
             <Header page="home"></Header>
             <div className="wrapper">

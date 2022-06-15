@@ -5,6 +5,7 @@ import profile_picture from "./../assets/img/profile.png";
 import * as THREE from "three";
 import CLOUDS from "vanta/dist/vanta.clouds.min";
 import { graphql, Link } from "gatsby";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 
 const NotFoundPage = ({ data }) => {
     const [vantaEffect, setVantaEffect] = useState(0);
@@ -30,21 +31,14 @@ const NotFoundPage = ({ data }) => {
     let posts = data.allContentfulPost.nodes;
     return (
         <>
+            <GatsbySeo
+                title="Axel Rodriguez - Desarrollador web"
+                description="Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing."
+                keywords="AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB"
+                image={profile_picture}
+            />
             <Helmet>
                 <title>Página no encontrada</title>
-                <meta
-                    name="title"
-                    content="Axel Rodriguez - Desarrollador web"
-                />
-                <meta
-                    name="description"
-                    content="Sitio web de Axel Rodriguez, apasionado por el desarrollo de software y el Cloud Computing."
-                />
-                <meta
-                    name="keywords"
-                    content="AWS,Lambda,Python,Javascript,Node,.NET,C#,DynamoDB"
-                />
-                <meta itemProp="image" content={profile_picture} />
             </Helmet>
             <Header></Header>
             <div className="wrapper">
